@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "name": "Art Workshop",
+        "description": "Learn how to create cartoon characters using your imagination.",
+        "start": "2026-04-10T09:00:00Z",
+        "end": "2026-04-10T10:00:00Z",
+        "location": {
+            "id": 101,
+            "name": "334.2",
+            "area": {
+                "id": 1001,
+                "name": "Main Hall"
+            }
+        },
+        "category": "workshop"
+    },
+    {
+        "id": 2,
+        "name": "Dress to Impress",
+        "description": "Show your cosplay on the stage and shine bright like a diamond!",
+        "start": "2026-04-11T11:00:00Z",
+        "end": "2026-04-11T11:30:00Z",
+        "location": {
+            "id": 102,
+            "name": "Empire Stage",
+            "area": {
+                "id": 1002,
+                "name": "West Hall"
+            }
+        },
+        "category": "meeting"
+    },
+    {
+        "id": 3,
+        "name": "League of Legends: TOURNAMENT",
+        "description": "Get your skills together and play with your team against other teams to win this tournament and rule the grounds of Demacia!",
+        "start": "2026-04-11T16:00:00Z",
+        "end": "2026-04-11T18:30:00Z",
+        "location": {
+            "id": 102,
+            "name": "Empire Stage",
+            "area": {
+                "id": 1002,
+                "name": "West Hall"
+            }
+        },
+        "category": "gaming"
+    }
+]
