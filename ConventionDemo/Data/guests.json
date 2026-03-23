@@ -2,42 +2,42 @@
   {
     "id": 1,
     "name": "Cole Sprouse",
-    "description": "An American actor who rose to fame as a child star on Disney Channel and later starred as Jughead Jones in Riverdale.",
+    "bio": "An American actor who rose to fame as a child star on Disney Channel and later starred as Jughead Jones in Riverdale.",
     "image": "https://www.rollingstone.com/wp-content/uploads/2023/03/cole-sprouse-call-her-daddy.jpg?w=1581&h=1054&crop=1",
     "role": "actor"
   },
   {
     "id": 2,
     "name": "Timothée Chalamet",
-    "description": "An acclaimed actor known for his emotionally nuanced roles in films like Call Me by Your Name and Dune.",
+    "bio": "An acclaimed actor known for his emotionally nuanced roles in films like Call Me by Your Name and Dune.",
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCht_sHYuaKMOsKC1HrvLQUGaRpUFjDjw5w0XMoJOiFQ&s",
     "role": "actor"
   },
   {
       "id": 3,
       "name": "Tom Holland",
-      "description": "An English actor best known for playing Spider-Man in the Marvel Cinematic Universe, recognized for his energetic performances and acrobatic style.",
+      "bio": "An English actor best known for playing Spider-Man in the Marvel Cinematic Universe, recognized for his energetic performances and acrobatic style.",
       "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/chorus/uploads/chorus_asset/file/19101461/spider_man_far_from_home_peter_parker_1562394390.jpg?w=1600&h=900&fit=crop",
       "role": "actor"
   },
   {
     "id": 4,
     "name": "Ezra Miller",
-    "description": "An American actor known for playing The Flash in DC films and for roles in Fantastic Beasts and independent cinema.",
+    "bio": "An American actor known for playing The Flash in DC films and for roles in Fantastic Beasts and independent cinema.",
     "image": "https://static.wikia.nocookie.net/harrypotter/images/f/fb/Ezra_Miller_still.jpg/revision/latest?cb=20210611232110",
     "role": "actor"
   },
   {
       "id": 5,
       "name": "Clémence Poésy",
-      "description": "A French actress and model known internationally for playing Fleur Delacour in the Harry Potter films and for roles in European and Hollywood productions.",
+      "bio": "A French actress and model known internationally for playing Fleur Delacour in the Harry Potter films and for roles in European and Hollywood productions.",
       "image": "https://upload.wikimedia.org/wikipedia/commons/9/94/Clémence_Poésy_par_Emeric_de_la_Cour.jpg",
       "role": "actress"
   },
   {
       "id": 6,
       "name": "Cooper Koch",
-      "description": "An American actor known for appearing in television dramas and films, gaining attention for his intense and character-driven performances.",
+      "bio": "An American actor known for appearing in television dramas and films, gaining attention for his intense and character-driven performances.",
       "image": "https://ew.com/thmb/UhN0TGpMqpsSjhbTbxUxWoh0tKQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Cooper-Koch-MONSTERS-101524-0eb459d5662d4152a0918d85c4642347.jpg",
       "role": "actor"
   }

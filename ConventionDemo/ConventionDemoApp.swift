@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SwiftData
 
 @main
 struct ConventionDemoApp: App {
@@ -13,5 +14,6 @@ struct ConventionDemoApp: App {
         WindowGroup {
             ContentView()
         }
+        .modelContainer(for: Guest.self)
     }
 }

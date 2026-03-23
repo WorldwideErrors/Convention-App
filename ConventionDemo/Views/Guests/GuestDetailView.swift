@@ -1,10 +1,19 @@
 import SwiftUI
+import SwiftData
 
 struct GuestDetailView: View {
     let id: Int
         
+    @Query private var guests: [Guest]
+    
     private var guest: Guest? {
-        GuestRepository.getGuest(withId: id)
+        guests.first
+    }
+    
+    init(id: Int) {
+        self.id = id
+        
+        _guests = Query(filter: #Predicate<Guest> { $0.id == id })
     }
     
     var body: some View {

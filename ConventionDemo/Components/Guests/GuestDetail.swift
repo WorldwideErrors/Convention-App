@@ -36,7 +36,7 @@ struct GuestDetail: View {
                         .font(.subheadline)
                 }
                 
-                Text(guest.description)
+                Text(guest.bio)
             }
             .padding(16) // inner padding for text
             .background(.thinMaterial)

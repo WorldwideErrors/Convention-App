@@ -1,9 +1,12 @@
 import SwiftUI
+import SwiftData
 
 struct GuestsView: View {
+    @Environment(\.modelContext) private var context
+    
     @State private var searchText = ""
     
-    private let guests = GuestRepository.loadGuests()
+    @Query private var guests: [Guest]
     
     private var searchResults : [Guest] {
         searchText.isEmpty ? guests : guests.filter { $0.name.localizedCaseInsensitiveContains(searchText) || $0.role.localizedCaseInsensitiveContains(searchText)}
@@ -32,6 +35,10 @@ struct GuestsView: View {
                 .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always), prompt: "Search guest")
                 .toolbarTitleDisplayMode(.inline)
             }
+        }
+        .task {
+            print("TASK IS RUNNING")
+            GuestRepository.seedIfNeeded(context: context)
         }
     }
 }
