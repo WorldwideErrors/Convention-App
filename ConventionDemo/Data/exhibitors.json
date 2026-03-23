@@ -2,15 +2,15 @@
     {
         "id": 1,
         "name": "Funko",
-        "description": "Funko Inc. is an American company that manufactures licensed and limited pop culture collectibles, known for its licensed vinyl figurines and bobbleheads. In addition, the company produces licensed plush, action figures, apparel, accessories and games. Founded in 1998 by Mike Becker and Claudia Becker, Funko was originally conceived as a small project to create various low-tech, nostalgia-themed toys. The company's first manufactured bobblehead was of the Big Boy restaurant mascot.",
+        "bio": "Funko Inc. is an American company that manufactures licensed and limited pop culture collectibles, known for its licensed vinyl figurines and bobbleheads. In addition, the company produces licensed plush, action figures, apparel, accessories and games. Founded in 1998 by Mike Becker and Claudia Becker, Funko was originally conceived as a small project to create various low-tech, nostalgia-themed toys. The company's first manufactured bobblehead was of the Big Boy restaurant mascot.",
         "image": "https://www.wanted.gr/wp-content/uploads/2020/11/funko-770x405-1-300x300.jpg",
-        "URL": "https:www.funko.com/",
+        "url": "https://www.funko.com/"
     },
     {
         "id": 2,
         "name": "The Noble Collection",
-        "description": "The Noble Collection is the official licensed creator of movie merchandise, specializing in finely crafted treasures, movie props and collectibles.",
+        "bio": "The Noble Collection is the official licensed creator of movie merchandise, specializing in finely crafted treasures, movie props and collectibles.",
         "image": "https://img.gothru.org/1086/5553887148322545687/overlay/assets/20210105060834.PqyT6P.png?save=optimize",
-        "URL": "https:www.funko.com/",
+        "url": "https://www.noblecollection.com/"
     }
 ]

@@ -10,6 +10,6 @@ struct ExhibitorDetail: View {
             .background(.thinMaterial.opacity(0.9))
             .frame(maxWidth:.infinity)
             .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
-        Text(exhibitor.description)
+        Text(exhibitor.bio)
     }
 }

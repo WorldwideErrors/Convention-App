@@ -14,6 +14,6 @@ struct ConventionDemoApp: App {
         WindowGroup {
             ContentView()
         }
-        .modelContainer(for: Guest.self)
+        .modelContainer(for: [Guest.self, Exhibitor.self])
     }
 }

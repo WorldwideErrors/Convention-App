@@ -1,10 +1,19 @@
 import SwiftUI
+import SwiftData
 
 struct ExhibitorDetailView: View {
     let id: Int
         
+    @Query private var exhibitors: [Exhibitor]
+    
     private var exhibitor: Exhibitor? {
-        ExhibitorRepository.getExhibitor(withId: id)
+        exhibitors.first
+    }
+    
+    init(id: Int) {
+        self.id = id
+        
+        _exhibitors = Query(filter: #Predicate<Exhibitor> { $0.id == id })
     }
     
     var body: some View {

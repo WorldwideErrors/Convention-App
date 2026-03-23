@@ -1,9 +1,12 @@
 import SwiftUI
+import SwiftData
 
 struct ExhibitorsView: View {
+    @Environment(\.modelContext) private var context
+    
     @State private var searchText = ""
     
-    private let exhibitors = ExhibitorRepository.loadExhibitors()
+    @Query private var exhibitors: [Exhibitor]
     
     private var searchResults : [Exhibitor] {
         searchText.isEmpty ? exhibitors : exhibitors.filter { $0.name.localizedCaseInsensitiveContains(searchText)}
@@ -26,6 +29,10 @@ struct ExhibitorsView: View {
                 .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always), prompt: "Search exhibitor")
                 .toolbarTitleDisplayMode(.inline)
             }
+        }
+        .task {
+            print("TASK IS RUNNING")
+            ExhibitorRepository.seedIfNeeded(context: context)
         }
     }
 }
