@@ -31,7 +31,6 @@
             }
         },
         "category": "meeting",
-        "signed_up": false
     },
     {
         "id": 3,
@@ -48,6 +47,5 @@
             }
         },
         "category": "gaming",
-        "signed_up": false
     }
 ]

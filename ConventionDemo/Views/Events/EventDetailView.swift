@@ -24,7 +24,10 @@ struct EventDetailView: View {
                 .opacity(0.9)
                 .clipShape(RoundedRectangle(cornerRadius: 16))
                 
-                CheckInButton(event: event, repository: eventRepo)
+                // Only workshops can be signed up for
+                if(event.category == Category.workshop){
+                    CheckInButton(event: event, repository: eventRepo)
+                }
             }
             .padding(16)
         }
