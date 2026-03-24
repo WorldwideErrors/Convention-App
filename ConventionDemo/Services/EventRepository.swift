@@ -3,6 +3,12 @@ import SwiftData
 
 //  conventionapp://event/1
 struct EventRepository {
+    private let context: ModelContext
+        
+        init(context: ModelContext) {
+            self.context = context
+        }
+    
     // Seed database from JSON (ONLY once)
     private static let userDefaultsKey = "events_seed_version"
     private static let seedVersion = SeedConfig.eventSeedVersion
@@ -110,5 +116,16 @@ struct EventRepository {
         )
 
         return try? context.fetch(descriptor).first
+    }
+    
+    func setSignedUp(for event: Event) {
+        event.signed_up.toggle()
+        
+        do {
+            try context.save()
+            print("Event \(event.id): \(event.name), signed up: \(event.signed_up)")
+        } catch {
+            print("Failed to save event: \(error)")
+        }
     }
 }

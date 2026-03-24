@@ -2,7 +2,7 @@
     {
         "id": 1,
         "name": "Art Workshop",
-        "bio": "Learn how to create cartoon characters using your imagination.",
+        "bio": "Learn how to create cartoon characters using your imagination by experimenting with shapes, expressions, and personality. Start by imagining what kind of character you want to bring to life—funny, adventurous, shy, or bold—and use simple shapes like circles, squares, or triangles to build the head and body. Add unique features such as expressive eyes, distinctive hairstyles, or quirky accessories to make your character stand out. Consider how your character moves and behaves, as posture and facial expressions help convey emotions and tell a story. By practicing and experimenting, you will develop your own style and learn to create original, lively cartoon characters full of personality.",
         "start": "2026-04-10T09:00:00Z",
         "end": "2026-04-10T10:00:00Z",
         "location": {
@@ -13,7 +13,8 @@
                 "name": "Main Hall"
             }
         },
-        "category": "workshop"
+        "category": "workshop",
+        "signed_up": false
     },
     {
         "id": 2,
@@ -29,7 +30,8 @@
                 "name": "West Hall"
             }
         },
-        "category": "meeting"
+        "category": "meeting",
+        "signed_up": false
     },
     {
         "id": 3,
@@ -45,6 +47,7 @@
                 "name": "West Hall"
             }
         },
-        "category": "gaming"
+        "category": "gaming",
+        "signed_up": false
     }
 ]

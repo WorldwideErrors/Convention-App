@@ -9,4 +9,5 @@ struct EventDTO: Codable {
     let end: Date
     let location: LocationDTO
     let category: Category
+    let signed_up: Bool?
 }
