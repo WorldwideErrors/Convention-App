@@ -6,6 +6,7 @@ struct ScheduleView: View {
             Color("bg-color").ignoresSafeArea()
             Text("Schedule View")
                 .font(.largeTitle)
+            // Schedule View with button to details
         }
     }
 }
