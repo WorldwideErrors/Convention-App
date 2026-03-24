@@ -27,7 +27,6 @@ struct ExhibitorDetailView: View {
                 }
             }
             .navigationTitle(exhibitor?.name ?? "Exhibitor")
-            .padding(16)
         }
     }
 }

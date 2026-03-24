@@ -3,6 +3,6 @@ struct ExhibitorDTO: Codable {
     let name: String
     let bio: String
     let image: String?
-//    let location: Location
+    let location: LocationDTO
     let url: String?
 }

@@ -3,14 +3,44 @@
         "id": 1,
         "name": "Funko",
         "bio": "Funko Inc. is an American company that manufactures licensed and limited pop culture collectibles, known for its licensed vinyl figurines and bobbleheads. In addition, the company produces licensed plush, action figures, apparel, accessories and games. Founded in 1998 by Mike Becker and Claudia Becker, Funko was originally conceived as a small project to create various low-tech, nostalgia-themed toys. The company's first manufactured bobblehead was of the Big Boy restaurant mascot.",
-        "image": "https://www.wanted.gr/wp-content/uploads/2020/11/funko-770x405-1-300x300.jpg",
-        "url": "https://www.funko.com/"
+        "image": "https://static0.moviewebimages.com/wordpress/wp-content/uploads/2026/02/funko-logo.png",
+        "url": "https://www.funko.com/",
+        "location": {
+            "id": 499,
+            "name": "Booth 1225",
+            "area": {
+                "id": 1004,
+                "name": "North Hall"
+            }
+        }
     },
     {
         "id": 2,
         "name": "The Noble Collection",
         "bio": "The Noble Collection is the official licensed creator of movie merchandise, specializing in finely crafted treasures, movie props and collectibles.",
-        "image": "https://img.gothru.org/1086/5553887148322545687/overlay/assets/20210105060834.PqyT6P.png?save=optimize",
-        "url": "https://www.noblecollection.com/"
+        "image": "https://www.hunter-collectors.de/images/categories/kategorie_replika_the-nobles-collection.png",
+        "url": "https://www.noblecollection.com/",
+        "location": {
+            "id": 489,
+            "name": "Booth 1322",
+            "area": {
+                "id": 1003,
+                "name": "East Hall"
+            }
+        }
+    },
+    {
+        "id": 3,
+        "name": "Collect and Play",
+        "bio": "We are Jerry and Nico, two passionate Pokémon TCG players from the very beginning.\n\nWith us, you will find a wide and unique range of Pokémon products...\n\nIn addition, we offer appraisals of individual cards and complete collections. Whether you want to sell, have them checked, or are simply curious about the value of your Pokémon cards – we are happy to help.",
+        "image": "https://collectandplay.nl/cdn/shop/files/collect_and_play_-_visite.jpg?v=1754729631",
+        "location": {
+            "id": 439,
+            "name": "Table 252",
+            "area": {
+                "id": 1003,
+                "name": "East Hall"
+            }
+        }
     }
 ]
