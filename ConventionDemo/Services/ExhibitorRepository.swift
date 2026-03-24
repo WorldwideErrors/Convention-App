@@ -23,14 +23,53 @@ struct ExhibitorRepository {
             return
         }
         
+        //Helpers
+        // Helpers
+        func getOrCreateArea(_ dto: AreaDTO) -> Area {
+            let descriptor = FetchDescriptor<Area>(
+                predicate: #Predicate { $0.id == dto.id }
+            )
+
+            if let existing = try? context.fetch(descriptor).first {
+                return existing
+            }
+
+            let area = Area(id: dto.id, name: dto.name)
+            context.insert(area)
+            return area
+        }
+
+        func getOrCreateLocation(_ dto: LocationDTO, area: Area) -> Location {
+            let descriptor = FetchDescriptor<Location>(
+                predicate: #Predicate { $0.id == dto.id }
+            )
+
+            if let existing = try? context.fetch(descriptor).first {
+                return existing
+            }
+
+            let location = Location(
+                id: dto.id,
+                name: dto.name,
+                area: area
+            )
+
+            context.insert(location)
+            return location
+        }
+        
         // Map and insert
         for dto in exhibitorDTOs {
+            let area = getOrCreateArea(dto.location.area)
+            let location = getOrCreateLocation(dto.location, area: area)
+            
             let exhibitor = Exhibitor(
                 id: dto.id,
                 name: dto.name,
                 bio: dto.bio,
                 image: dto.image,
-                url: dto.url
+                url: dto.url,
+                location: location
             )
             
             context.insert(exhibitor)

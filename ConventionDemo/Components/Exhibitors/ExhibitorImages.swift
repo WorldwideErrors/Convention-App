@@ -28,7 +28,7 @@ struct ExhibitorImage: View {
                 image
                     .resizable()
                     .aspectRatio(contentMode: .fit)
-                    .frame(maxWidth: .infinity, maxHeight: 200)
+                    .frame(maxWidth: .infinity)
                     .background(Color.gray.opacity(0.1))
                     .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
             case .failure(_):
