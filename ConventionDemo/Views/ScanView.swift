@@ -3,6 +3,7 @@ import CodeScanner
 import AVFoundation
 
 struct ScanView: View {
+    @Environment(\.modelContext) private var context
     
     @State private var scannedEvent: Event?
     @State private var hasScanned = false
@@ -18,7 +19,7 @@ struct ScanView: View {
                 )
                 .ignoresSafeArea()
                 
-                // 🌫️ Dark overlay
+                // Dark overlay
                 Color.black.opacity(0.5)
                     .ignoresSafeArea()
                 
@@ -30,7 +31,7 @@ struct ScanView: View {
                 }
                 .padding()
             }
-            // 🚀 Navigation happens here
+            // Navigation
             .navigationDestination(item: $scannedEvent) { event in
                 EventDetailView(event: event)
                     .onDisappear {
@@ -68,18 +69,17 @@ struct ScanView: View {
         }
     }
     
-    // MARK: - Scan Logic
+    // Scan Logic
     func handleScan(result: Result<ScanResult, ScanError>) {
         guard !hasScanned else { return }
         hasScanned = true
         
         if case let .success(code) = result {
             
-            // 📳 Haptic
             UINotificationFeedbackGenerator().notificationOccurred(.success)
             
-            if let event = getEventByID(from: code.string) {
-                scannedEvent = event // 👉 triggers navigation
+            if let event = EventRepository.getEventByID(from: code.string.lowercased(), context: context) {
+                scannedEvent = event
             } else {
                 // allow retry
                 DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
