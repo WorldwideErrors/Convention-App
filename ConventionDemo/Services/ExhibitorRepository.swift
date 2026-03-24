@@ -3,11 +3,15 @@ import SwiftData
 
 struct ExhibitorRepository {
     // Seed database from JSON (ONLY once)
+    private static let userDefaultsKey = "exhibitor_seed_version"
+    private static let seedVersion = SeedConfig.exhibitorSeedVersion
+    
     static func seedIfNeeded(context: ModelContext) {
         // Check if data already exists
-        let descriptor = FetchDescriptor<Exhibitor>()
-        if let existing = try? context.fetch(descriptor),
-           !existing.isEmpty {
+        let savedVersion = UserDefaults.standard.integer(forKey: userDefaultsKey)
+
+        if savedVersion == seedVersion {
+            print("Exhibitors already seeded")
             return
         }
         
@@ -35,7 +39,9 @@ struct ExhibitorRepository {
         // Save data
         do {
             try context.save()
-            print("Exhibitors seeded")
+            UserDefaults.standard.set(seedVersion, forKey: userDefaultsKey)
+
+            print("Exhibitors seeded successfully: \(exhibitorDTOs.count)")
         } catch {
             print("Save failed: ", error)
         }

@@ -4,12 +4,15 @@ import SwiftData
 //  conventionapp://event/1
 struct EventRepository {
     // Seed database from JSON (ONLY once)
+    private static let userDefaultsKey = "events_seed_version"
+    private static let seedVersion = SeedConfig.eventSeedVersion
+    
     static func seedIfNeeded(context: ModelContext) {
 
             // Check if already seeded
-            let descriptor = FetchDescriptor<Event>()
-            if let existing = try? context.fetch(descriptor),
-               !existing.isEmpty {
+            let savedVersion = UserDefaults.standard.integer(forKey: userDefaultsKey)
+
+            if savedVersion == seedVersion {
                 print("Events already seeded")
                 return
             }
@@ -83,6 +86,8 @@ struct EventRepository {
 
                 // Save data
                 try context.save()
+                UserDefaults.standard.set(seedVersion, forKey: userDefaultsKey)
+
                 print("Events seeded successfully: \(eventDTOs.count)")
 
             } catch {

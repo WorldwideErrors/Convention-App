@@ -2,12 +2,15 @@ import Foundation
 import SwiftData
 
 struct GuestRepository {
+    private static let userDefaultsKey = "guest_seed_version"
+    private static let seedVersion = SeedConfig.guestSeedVersion
+    
     // Seed database from JSON (ONLY once)
     static func seedIfNeeded(context: ModelContext) {
-        // Check if data already exists
-        let descriptor = FetchDescriptor<Guest>()
-        if let existing = try? context.fetch(descriptor),
-           !existing.isEmpty {
+        let savedVersion = UserDefaults.standard.integer(forKey: userDefaultsKey)
+
+        if savedVersion == seedVersion {
+            print("Guests already seeded")
             return
         }
         
@@ -35,7 +38,9 @@ struct GuestRepository {
         // Save data
         do {
             try context.save()
-            print("Guests seeded")
+            UserDefaults.standard.set(seedVersion, forKey: userDefaultsKey)
+
+            print("Guests seeded successfully: \(guestDTOs.count)")
         } catch {
             print("Save failed: ", error)
         }

@@ -8,7 +8,7 @@
   },
   {
     "id": 2,
-    "name": "Timothée Chalamet",
+    "name": "Timothy Chalamet",
     "bio": "An acclaimed actor known for his emotionally nuanced roles in films like Call Me by Your Name and Dune.",
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCht_sHYuaKMOsKC1HrvLQUGaRpUFjDjw5w0XMoJOiFQ&s",
     "role": "actor"
@@ -40,5 +40,19 @@
       "bio": "An American actor known for appearing in television dramas and films, gaining attention for his intense and character-driven performances.",
       "image": "https://ew.com/thmb/UhN0TGpMqpsSjhbTbxUxWoh0tKQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Cooper-Koch-MONSTERS-101524-0eb459d5662d4152a0918d85c4642347.jpg",
       "role": "actor"
+  },
+  {
+    "id": 7,
+    "name": "Tom Felton",
+    "bio": "An English actor best known for portraying Draco Malfoy in the Harry Potter film series. He has also appeared in various films and television productions, earning recognition for his versatile acting career and long-standing presence in fantasy and drama genres.",
+    "image": "https://s.yimg.com/ny/api/res/1.2/fA7qBXLrk9PtI19W_UP2qA--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD02NzU7Y2Y9d2VicA--/https://media.zenfs.com/en/thedailybeast.com/f26cd7ff03d2d7e07bd780446f48f699",
+    "role": "actor"
+  },
+  {
+    "id": 8,
+    "name": "Evan Peters",
+    "bio": "An American actor known for his versatile performances in film and television. He gained major recognition for portraying Jeffrey Dahmer in the Netflix series Monster: The Jeffrey Dahmer Story, as well as roles in American Horror Story and other acclaimed productions.",
+    "image": "https://wallpapercave.com/wp/wp11665334.jpg",
+    "role": "actor"
   }
 ]
