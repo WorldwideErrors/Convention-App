@@ -3,8 +3,8 @@
         "id": 1,
         "name": "Art Workshop",
         "bio": "Learn how to create cartoon characters using your imagination by experimenting with shapes, expressions, and personality. Start by imagining what kind of character you want to bring to life—funny, adventurous, shy, or bold—and use simple shapes like circles, squares, or triangles to build the head and body. Add unique features such as expressive eyes, distinctive hairstyles, or quirky accessories to make your character stand out. Consider how your character moves and behaves, as posture and facial expressions help convey emotions and tell a story. By practicing and experimenting, you will develop your own style and learn to create original, lively cartoon characters full of personality.",
-        "start": "2026-04-10T09:00:00Z",
-        "end": "2026-04-10T10:00:00Z",
+        "start": "2026-04-11T12:00:00Z",
+        "end": "2026-04-10T18:00:00Z",
         "location": {
             "id": 101,
             "name": "334.2",
@@ -20,8 +20,8 @@
         "id": 2,
         "name": "Dress to Impress",
         "bio": "Show your cosplay on the stage and shine bright like a diamond!",
-        "start": "2026-04-11T11:00:00Z",
-        "end": "2026-04-11T11:30:00Z",
+        "start": "2026-04-12T12:00:00Z",
+        "end": "2026-04-12T18:00:00Z",
         "location": {
             "id": 102,
             "name": "Empire Stage",
@@ -47,5 +47,169 @@
             }
         },
         "category": "gaming",
+    },
+    {
+        "id": 4,
+        "name": "Anime Drawing Masterclass",
+        "bio": "Join professional illustrators as they guide you through the process of creating stunning anime-style characters. Learn techniques for proportions, facial expressions, dynamic poses, and shading. Whether you're a beginner or experienced artist, this session will help you refine your skills and bring your characters to life with more depth and personality.",
+        "start": "2026-04-11T10:00:00Z",
+        "end": "2026-04-11T11:30:00Z",
+        "location": {
+            "id": 103,
+            "name": "Studio Room A",
+            "area": {
+                "id": 1003,
+                "name": "Artist Alley"
+            }
+        },
+        "category": "workshop",
+        "signed_up": false
+    },
+    {
+        "id": 5,
+        "name": "Marvel vs DC Debate",
+        "bio": "Fans gather to discuss and debate the greatest superheroes, storylines, and cinematic moments from Marvel and DC universes.",
+        "start": "2026-04-11T12:00:00Z",
+        "end": "2026-04-11T15:00:00Z",
+        "location": {
+            "id": 104,
+            "name": "Panel Room B",
+            "area": {
+                "id": 1004,
+                "name": "Conference Hall"
+            }
+        },
+        "category": "meeting"
+    },
+    {
+        "id": 6,
+        "name": "Super Smash Bros Tournament",
+        "bio": "Compete against other players in an intense Super Smash Bros tournament.",
+        "start": "2026-04-11T18:00:00Z",
+        "end": "2026-04-11T21:00:00Z",
+        "location": {
+            "id": 105,
+            "name": "Gaming Arena",
+            "area": {
+                "id": 1005,
+                "name": "East Hall"
+            }
+        },
+        "category": "gaming"
+    },
+    {
+        "id": 7,
+        "name": "Cosplay Repair Station Workshop",
+        "bio": "Learn essential tips and tricks to repair and maintain your cosplay on the go.",
+        "start": "2026-04-12T09:30:00Z",
+        "end": "2026-04-12T11:00:00Z",
+        "location": {
+            "id": 106,
+            "name": "Workshop Zone",
+            "area": {
+                "id": 1006,
+                "name": "Cosplay Corner"
+            }
+        },
+        "category": "workshop",
+        "signed_up": false
+    },
+    {
+        "id": 8,
+        "name": "Voice Actors Live Q&A",
+        "bio": "Meet famous voice actors and hear behind-the-scenes stories.",
+        "start": "2026-04-12T11:30:00Z",
+        "end": "2026-04-12T13:00:00Z",
+        "location": {
+            "id": 107,
+            "name": "Main Stage",
+            "area": {
+                "id": 1001,
+                "name": "Main Hall"
+            }
+        },
+        "category": "meeting"
+    },
+    {
+        "id": 9,
+        "name": "Indie Game Challenge",
+        "bio": "Try out a variety of indie games developed by upcoming creators.",
+        "start": "2026-04-12T13:30:00Z",
+        "end": "2026-04-12T16:30:00Z",
+        "location": {
+            "id": 108,
+            "name": "Indie Zone",
+            "area": {
+                "id": 1007,
+                "name": "Expo Floor"
+            }
+        },
+        "category": "gaming"
+    },
+    {
+        "id": 10,
+        "name": "Storytelling for Comics",
+        "bio": "Explore the art of storytelling in comics and visual narratives.",
+        "start": "2026-04-12T16:30:00Z",
+        "end": "2026-04-12T18:00:00Z",
+        "location": {
+            "id": 103,
+            "name": "Studio Room A",
+            "area": {
+                "id": 1003,
+                "name": "Artist Alley"
+            }
+        },
+        "category": "workshop",
+        "signed_up": false
+    },
+    {
+        "id": 11,
+        "name": "Retro Arcade Free Play",
+        "bio": "Enjoy classic arcade games and relive the golden age of gaming.",
+        "start": "2026-04-13T10:00:00Z",
+        "end": "2026-04-13T13:00:00Z",
+        "location": {
+            "id": 105,
+            "name": "Gaming Arena",
+            "area": {
+                "id": 1005,
+                "name": "East Hall"
+            }
+        },
+        "category": "gaming"
+    },
+    {
+        "id": 12,
+        "name": "Build Your Own Comic",
+        "bio": "Create your own short comic from scratch with guidance from experienced artists.",
+        "start": "2026-04-13T11:00:00Z",
+        "end": "2026-04-13T13:30:00Z",
+        "location": {
+            "id": 103,
+            "name": "Studio Room A",
+            "area": {
+                "id": 1003,
+                "name": "Artist Alley"
+            }
+        },
+        "category": "workshop",
+        "signed_up": false
+    },
+    {
+        "id": 13,
+        "name": "Closing Cosplay Parade",
+        "bio": "Celebrate the best cosplayers of the event in a grand finale parade.",
+        "start": "2026-04-13T15:00:00Z",
+        "end": "2026-04-13T16:30:00Z",
+        "location": {
+            "id": 107,
+            "name": "Main Stage",
+            "area": {
+                "id": 1001,
+                "name": "Main Hall"
+            }
+        },
+        "category": "meeting"
     }
 ]

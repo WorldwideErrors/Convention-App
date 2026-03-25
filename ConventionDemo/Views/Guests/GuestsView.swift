@@ -31,6 +31,7 @@ struct GuestsView: View {
                     }
                 }
                 .padding(.horizontal, 16)
+                .navigationTitle("Guests")
                 .navigationBarBackButtonHidden(true)
                 .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always), prompt: "Search guest")
                 .toolbarTitleDisplayMode(.inline)

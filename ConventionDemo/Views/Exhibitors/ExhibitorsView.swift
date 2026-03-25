@@ -25,6 +25,7 @@ struct ExhibitorsView: View {
                     }
                     
                 }.padding(.horizontal, 16)
+                .navigationTitle("Exhibitors")
                 .navigationBarBackButtonHidden(true)
                 .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always), prompt: "Search exhibitor")
                 .toolbarTitleDisplayMode(.inline)
