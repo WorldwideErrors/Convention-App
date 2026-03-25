@@ -39,6 +39,7 @@ struct ExhibitorDetail: View {
                 .frame(maxWidth: .infinity)
                 .background(.thinMaterial.opacity(0.9))
                 .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
+                .foregroundStyle(Color("text-color"))
             }
         }
         .padding()

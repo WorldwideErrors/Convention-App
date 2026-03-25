@@ -18,7 +18,7 @@ struct ScheduleCard: View {
                 
                 Spacer()
                 
-                Image(systemName: "chevron.right").foregroundStyle(Color("text-color"))
+                FavButton(event: event)
             }
             .padding()
             .background(.thinMaterial.opacity(0.9))
