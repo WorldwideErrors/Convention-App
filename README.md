@@ -1,9 +1,15 @@
 # Convention App
-Honderden, misschien wel duizenden mensen gaan jaarlijks naar conventies als Dutch Comic Con, TwitchCon en Elfia. 
-Hierin worden vaak kleine meetups georganiseerd. Deze kunnen door de gasten zelf, maar ook door de organisatie worden gehost. 
-Degene die door de organisatie zullen worden gehost zijn evenementen waar je aan kan meedoen. Hierin heb je twee soorten; Workshops en Special Guests. 
-Special Guests kun je gewoon meeten. Daarbij is geen minimum of maximum aan het aantal personen, maar voor workshops zijn vaak gelimiteerde plekken en moet je je dus aanmelden. 
-Om de ervaring van de bezoekers optimaal te benutten zullen ze zich ter plekke aanmelden door middel van een QR-code in de app.
+An iOS application built with Swift for browsing and exploring information at a convention. The app provides users with an easy way to explore schedules, meet guests, and access event-related details directly from their mobile device.
+
+## Features
+### Core Features
+- Browse and explore activities, special guests, and exhibitors  
+- View detailed exhibitor and guest information  
+- Scan QR codes for workshop registration  
+- Structured event schedule  
+- Clean SwiftUI-based interface  
+- Built with Swift 5.9+ and SwiftData  
+- Uses **CodeScanner** for QR scanning
 
 ## Screenshots
 <p align="center" padding-bottom="16px">
@@ -27,30 +33,35 @@ Om de ervaring van de bezoekers optimaal te benutten zullen ze zich ter plekke a
   <img src="https://lh3.googleusercontent.com/pw/AP1GczOO15h7VDB5Hv136Lzr6QD9EToVMyoT8oax0WQIh0DV6oMDULxTcl3a3-yOzvXv5W3jyGxfzrs6rK1oITKPX8LZjN7bXvUKLXa3DcWZSoL0HB9DhCwJwxVNKhurQwphuTf58Pko-xL5AstOy26aC5PohZbAJGFwx5ONe07f7PJbpsMgEahED9K1FWcLImnszbpPNFCMLcP6w61RPBV5nb6W-sIMaFggaw0r7F8BJo8JHya8UUeg_a_z3zj1jz6V7_ZBYvGubSH3mQapL9ndzjO_WasWcHhPVzsSt8SY735DF_QRSfebEc_cy5P9Ibw9Nv1qLLjfO3EbEh0ILeTRizCpqFGZRmsD6Sd0aaBMiI5DpLpi56E0H0CDGJe4OWCukmZX5V3dKvjgYysfg_6HAgNCVcP6MF1L8bwBwAAZ6wRnPwUen7Yt-99-zSnMY_sHD88DXiuNbfH24V6U-uSq7KzQQvBwrnhPqcLJf4ttJZMl7junl2GGC0A5rFH1N8Eytjofjeo81Z8JfMigE5sApcxbK2Q1IrY2mjgiu01SOKZ601J0fAPtu2CvQdwRvbL4oeEmclBRcrlph7AVNon-iaZJJc2veNDvpZSvKIMkmHy37MKF29Hd7azxETx2snGlajLTbX76CMpzPRd9URT52gbmpdNfl_iRxJF4g8TL3F2Ba4oTBh2EbcUtPCh3v5DuzjnbFAGdG7U_BbYkQLjjNwzjlLvSC94UKTmsBcKMQPS220un5QKRfKpi2wXUcnoDVMlwMAG8CulxD7gCjcr_ROxLubIJzYmXGUc44Y-6Zd8gw47dEw1RiN7qPlUPu_ZkDRzRngKxEs-RquU48Yfkhizm0j9KLQKdoF_zgV2MHbFH_7e9xRPDEfGYTTw5BaC_AKopEaoSe_LjP93uX7PHhA=w824-h1792-s-no?authuser=0" width="300" alt="qr code page">
   </p>
 
-  ## Features
-  ...
-
-  ## Tech Stack
-  ### Language
-  - Swift 5.9+
-  
-  ### Frameworks:
-  - SwiftUI
-  - SwiftData
-  
-  ### Tools:
-  - Xcode 26.2
-  
-  ### Architectuur:
-  - SwiftUI-based UI
-  - State-driven design
-  - Lightweight structure (in progress toward MVVM)
-
-  ### Packages:
-  - CodeScanner 2.5.2
+## Tech Stack
+- **Language:** Swift 5.9+  
+- **Frameworks:** SwiftUI, SwiftData  
+- **Tools:** Xcode 26.2  
+- **Architecture:** SwiftUI state-driven design (moving toward MVVM)  
+- **Packages:** CodeScanner 2.5.2
 
 ##  Installation
 ### Requirements
-...
+- Xcode: 15+
+- Swift: 5.9+
+- iOS Deployment Target: 15.0+
+
+### Clone project
+```bash
+git clone https://github.com/WorldwideErrors/Convention-App.git
+cd Convention-App
+```
+
+### Open the Project
+```
+Open het .xcodeproj of .xcworkspace bestand in Xcode:
+open ConventionDemo.xcodeproj
+```
+
+## Run the app
+```
+Select a simulator or your physical device
+Press ⌘ + R to build and run
+```
 
 - Jeffrey, WorldwideErrors
